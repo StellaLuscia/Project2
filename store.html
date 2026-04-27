@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Store</title>
+
+    <!--Link For Eagle Lake & Iceland Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Iceland&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            box-sizing: border-box; margin:0; padding:0;
+        }
+        body{
+            font-family: "Iceland", sans-serif;
+            font-size: 19px;
+            background: linear-gradient(rgb(19, 14, 37), rgb(41, 31, 59));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 90px;
+        }
+        header{
+            width: 100%;
+            padding: 15px 10%;
+            padding-bottom: 20px;
+            background-color: rgb(232, 230, 200);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header a{
+            color: rgb(23, 19, 35);
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        header a:hover{
+            color: rgb(93, 99, 173);
+            transition-duration: 0.4s;
+        }
+        h1{
+            margin-top: 20px;
+            text-align: center;
+            color: rgb(232, 230, 200);
+
+            font-family: "Eagle Lake";
+            font-weight: 900;
+            font-style: normal;
+            font-size: 40px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1300px;
+        }
+        .product-card {
+            background: linear-gradient(rgb(43, 38, 71), rgb(70, 58, 101));
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: .5px .5px 2px 2px rgb(239, 217, 146);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: .5px .5px 2px 2px rgb(239, 217, 146);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:active {
+            transform: scale(1.1);
+            box-shadow: .5px .5px 2px 2px rgb(239, 217, 146);
+            transition: transform 0.3s, box-shadow 0.6s;
+            background: linear-gradient(rgb(43, 38, 71), rgb(73, 65, 113));
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product-card h2 {
+            color: rgb(232, 230, 200);
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            color: rgb(232, 230, 200);
+            margin-bottom: 15px;
+        }
+        .buy {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(232, 230, 200);
+            color: rgb(23, 19, 35);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .buy:hover {
+            background-color: rgb(131, 136, 207);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .buy:active {
+            background-color: rgb(131, 136, 207);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /*Class Styling for Iceland Font*/
+        .iceland-regular{
+        font-family: "Iceland", sans-serif;
+        font-weight: 800;
+        font-size: 80px;
+        font-style: normal;
+        }
+
+        /*Class Styling for Eagle-Lake Font*/
+        .eagle-lake-regular{
+        font-family: "Eagle Lake", serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="project2.html">Home</a>
+        <nav>
+            <a href="https://craftwork.design/catalog/3d-assets">Assets</a>
+            <a href="https://craftwork.design/catalog/fonts">Fonts</a>
+            <a href="https://craftwork.design/tag/animation/">Animations</a>
+        </nav>
+    </header>
+    <h1>Products</h1>
+    <div class="product-grid">
+        <div class="product-card">
+        <!--Image Source: https://www.pexels.com/photo/an-artist-s-illustration-of-artificial-intelligence-ai-this-image-visualises-artificial-general-intelligence-or-agi-it-was-created-by-wes-cockx-as-part-of-the-visualising-ai-project-l-17486099/-->
+            <img src="Images/Iridescent.jpg" width="400" alt="Iridescent Asset Pack">
+            <h2>Iridescent Asset Pack</h2>
+            <p>Presentation Slides, Posters, UI, etc.</p>
+            <a href="https://craftwork.design/product/abstract-iridescent" class="buy">Purchase</a>
+        </div>
+        <div class="product-card">
+            <!--Image Source: https://www.pexels.com/photo/light-trails-in-the-sky-during-night-time-10756579/-->
+            <img src="Images/Space_Rings.jpg" width="280" alt="Mega Binory Font">
+            <h2>Mega Binory Font</h2>
+            <p>Futuristic, Sci-Fi, Cyberpunk Theme</p>
+            <a href="https://craftwork.design/product/mega-binory-modern-futuristic-sci-fi-font" class="buy">Purchase</a>
+        </div>
+        <div class="product-card">
+            <!--Image Source: https://www.pexels.com/photo/blue-and-black-starry-night-sky-4497038/-->
+            <img src="Images/Galaxy.jpg" width="300" alt="Anmt Animation Kit">
+            <h2>Anmt Animation Kit</h2>
+            <p>Compatible with React and Typescript</p>
+            <a href="https://craftwork.design/product/anmt-animation-kit" class="buy">Purchase</a>
+        </div>
+    </div>
+</body>
+</html>
