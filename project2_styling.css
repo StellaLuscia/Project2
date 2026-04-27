@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box; margin:0px;
+}
+body{
+    font-family: "Iceland", sans-serif;
+    background: linear-gradient(rgb(19, 14, 37), rgb(41, 31, 59));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+hr, pre{
+    color: rgb(232, 230, 200);
+    margin-bottom: 30px; 
+    text-shadow: 2px 3px 4px rgba(23, 19, 35, 0.3);
+}
+h1{
+    color: rgb(232, 230, 200);
+    text-shadow: 2px 3px 4px rgba(23, 19, 35, 0.3);   
+}
+p{
+    color: rgb(232, 230, 200); 
+    text-shadow: 2px 3px 4px rgba(23, 19, 35, 0.3);
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+pre{
+    text-align: center;
+}
+table{
+    margin: 20px;
+    padding:10px;
+    background-color: rgb(19, 14, 37);
+    border-color: rgb(232, 230, 200);
+}
+th{
+    color: rgb(117, 149, 230);
+    padding:10px;
+}
+td{
+    color: rgb(183, 160, 240);
+    padding:20px;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+}
+table:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(239, 217, 146, 0.3);
+    transition: transform 0.6s, background-color 0.4s;
+}
+.table-data{
+    background: linear-gradient(rgb(15, 15, 30), rgb(36, 28, 55));
+}
+.table-data:hover{
+    background-color: rgb(18, 15, 26);
+}
+.table-data:active{
+    transform:scale(1.1);
+
+    background-color: rgb(21, 19, 43);
+}
+.hub{
+    padding: 30px 60px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: "Iceland", sans-serif;
+    text-decoration: none;
+    color: rgb(23, 19, 35);
+    background-color: rgb(203, 202, 184);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+}
+.hub:hover {
+    transform: translateY(-5px);
+    background-color: rgb(131, 136, 207);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/*Class Styling for Iceland Font*/
+.iceland-regular{
+  font-family: "Iceland", sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  font-style: normal;
+}
+
+/*Class Styling for Eagle-Lake Font*/
+.eagle-lake-regular{
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Class For Tweaking Icon*/
+.custom-icon{
+    color: rgb(232, 230, 200);
+    font-size: 100px;
+}
+
+#welcome_text{
+    color: rgb(28, 24, 40);
+    font-family: "Eagle Lake";
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.resume_titles{
+    background-color: rgb(230, 212, 185);
+}
+.resume_titles:hover {
+    animation: none;
+}
+.resume_bar{
+    background-color: rgb(232, 230, 200);
+    color: rgb(28, 24, 40);
+    font-family: "Eagle Lake";
+    font-weight: 900;
+    font-style: normal;
+    font-size: 35px;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    min-width: 100%;
+    text-align: center;
+    z-index: 10;
+    margin-bottom: 20px;
+    box-shadow: 20px 20px 20px 20px rgba(19, 19, 31, 0.6);
+}
