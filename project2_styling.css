@@ -102,6 +102,7 @@ table:hover{
 .custom-icon{
     color: rgb(232, 230, 200);
     font-size: 100px;
+    margin-bottom: 25px;
 }
 
 #welcome_text{
