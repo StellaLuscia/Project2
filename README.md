@@ -1,0 +1,1 @@
+This is a simple website storefront design project created for my Web Technologies class, built with HTML and CSS. It includes a section which displays my resume and another for mock digital product listings.
